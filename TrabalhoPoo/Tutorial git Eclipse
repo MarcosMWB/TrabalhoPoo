@@ -1,1 +1,62 @@
 http://www.decom.ufop.br/imobilis/fazendo-a-integracao-do-eclipse-com-o-git/
+
+
+
+Instalação
+Primeiramente devemos fazer  a instalação do EGit no Eclipse. Para tanto é necessário que o mesmo esteja atualizado, uma vez que a versões antigas não possuem o Eclipse Marketplace.
+
+Uma vez atualizado, prossiga com as etapas:
+
+Abra o Eclipse
+Abra o Marketplace (Help → Eclipse Marketplace)
+Busque por EGit
+Clique em instalar
+Após a instalação do EGit é necessário reiniciar o Eclipse.
+Utilizando O EGit
+Um Breve Parenteses
+Para utilização do Git normalmente é necessário que o usuário possua uma chave SSH. Caso você não possua a mesma você pode gerar uma dentro do próprio Eclipse assim:
+
+Abra a janela de preferencias  (Window → Preferences)
+Vã ao menu de gerencia de chaves SSH (General → Network Connections → SSH)
+Vá na aba Key Management e clique em gerar chave SSH
+Aplicar
+Reiniciar o Eclipse
+… Retomando
+Inicialmente devemos clonar o projeto do repositorio Git que será usado. Para isso você deve ir para a perspectiva Git Repository Exploring (Window → Open Perspective → Git Repository Exploring).
+
+Clique no botão Clone Git Repository e preencha a tela com as informações de acesso do servidor Git a ser usado.
+
+
+Tela de entrada de dados para clonagem de repositório.
+
+Você pode entrar diretamente a URI ou deixar que ela seja  preenchida automaticamente a medida que você preenche os outros campos. Após clicar em next você deverá escolher quais branchs do repositório irá clonar.
+
+
+Seleção de branchs a serem clonados.
+
+Na próxima etapa iremos fazer as ultimas configurações do repositório clonado.
+
+
+Opções de trabalho com o repositório clonado.
+
+Nesta tela você pode escolher as seguintes opções:
+
+Destino onde o repositório será clonado
+A branch de trabalho inicial
+O nome que aparecerá para o servidor remoto (facilita identificação quando existem vários repositórios)
+E principalmente, a opção de já adicionar o projeto clonado a área de trabalho do Eclipse.
+Após clicar em Finish o projeto já estará pronto para uso na área de trabalho do Eclipse. A partir deste momento todas as opções do Git a serem usadas no projeto estarão disponíveis através do menu acessado com um clique com o botão direito no projeto → Team.
+
+
+Menu com as opções do git.
+
+Através do menu poderemos fazer push, pull e tantos outros comandos uteis do Git. Ao clicar em Merge, se houverem conflitos, você será direcionado a perspectiva de Sincronização onde poderá comparar os arquivos diferentes e resolver os conflitos.
+
+Um Possível Problema
+Embora o EGit não dependa do usuário possuir o Git instalado em sua máquina é possível que o EGit apresente alguns problemas de funcionamento. O problema mais recorrente que pode acontecer neste caso é o servidor não reconhecer a chave SSH na sua máquina. Para corrigir isto basta instalar o Git e fazer a seguinte configuração no Eclipse:
+
+Acessar as Preferences
+Expandir o menu Team
+Expandir o menu Git
+Abrir a opção Configuration
+Na aba System Settings defina onde esta o arquivo gitconfig da instalação do Git (Caminho padrão: C:\Program Files (x86)\Git\).
