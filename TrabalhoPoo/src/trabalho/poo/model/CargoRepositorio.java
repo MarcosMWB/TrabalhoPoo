@@ -1,5 +1,5 @@
 package trabalho.poo.model;
 
-public class teste {
+public class CargoRepositorio {
 
 }
