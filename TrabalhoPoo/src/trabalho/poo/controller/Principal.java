@@ -1,8 +1,9 @@
-package control;
+package trabalho.poo.controller;
 
 import corejava.*;
 	
 public class Principal {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		Clientes umCliente;
@@ -36,11 +37,15 @@ public class Principal {
                   String endereco = Console.readLine("Insira seu Endereço\n");   
 
                      try{
-                     umCliente = new Clientes(cpf, nome, endereco, telefone, email);    
-                     listaDeClientes.adicionar(umCliente);
+                    	 
+                    	 umCliente = new Clientes(cpf, nome, endereco, telefone, email);    
+                    	 listaDeClientes.adicionar(umCliente);
+                     
                      }
-                     catch(ExcecaoClientes e){
+                     catch(Exception e){
+                   
                          System.out.println(e.getMessage());
+                         
                      }       
                     case 2:
                     	int resposta = Console.readInt('\n' + "Digite o CPF do Cliente que você deseja alterar: ");

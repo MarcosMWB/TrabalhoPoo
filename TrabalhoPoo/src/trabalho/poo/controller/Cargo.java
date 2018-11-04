@@ -1,4 +1,4 @@
-package control;
+package trabalho.poo.controller;
 
 public class Cargo {
 	  private int cod;

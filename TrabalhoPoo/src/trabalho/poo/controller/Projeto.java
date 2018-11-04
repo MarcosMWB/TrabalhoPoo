@@ -1,8 +1,9 @@
-package control;
+package trabalho.poo.controller;
 
 public class Projeto {
+	
 	   private int cod;
-	   Clientes cpf;
+	   private Clientes cpf;
 	   private float dataIni;
 	   private float dataFim;
 	   private float valor;

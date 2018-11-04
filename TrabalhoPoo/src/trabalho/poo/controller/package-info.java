@@ -5,4 +5,4 @@
  * @author rafac
  *
  */
-package control;
+package trabalho.poo.controller;

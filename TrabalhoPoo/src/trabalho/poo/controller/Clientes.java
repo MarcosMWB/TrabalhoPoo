@@ -1,12 +1,13 @@
-package control;
+package trabalho.poo.controller;
 
 public class Clientes {
+	
     private int CPF;
     private String nome;
     private String endereco;
     private int telefone;
     private String email;
-    Clientes umCliente;  
+  
     
     public Clientes(int CPF, String nome, String endereco, int telefone, String email){
         this.CPF = CPF;

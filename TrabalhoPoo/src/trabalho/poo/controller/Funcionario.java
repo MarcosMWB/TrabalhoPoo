@@ -1,6 +1,7 @@
-package control;
+package trabalho.poo.controller;
 
 public class Funcionario {
+	
     private int cod;
     private String nome;
     private int telefone;
